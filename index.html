@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"
+    />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="email=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="renderer" content="webkit">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Amaze UI" />
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <title>Resume-Wendy fan</title>
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/typo.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <!-- My setting -->
+   <!--  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+</script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <script>
+        function loading() {
+            document.getElementsByClassName('avatar')[0].style.display = 'block';
+            document.getElementsByClassName('loading')[0].style.display = 'none';
+        }
+    </script>
+    
+</head>
+
+<body>
+
+    <header class="header"></header>
+
+    <article class="container">
+        <section class="side" id="side">
+
+            <!-- 左栏固定开关，记得及时删除这段代码 Start-->
+            <label class="switch" style="display: none;" onchange="switchFixed()">
+                <script type="text/javaScript">
+                    function switchFixed(){
+                        var value = document.getElementById('side').style.position === 'fixed' ? 'absolute' : 'fixed';
+                        document.getElementById('side').style.position = value;
+                    }
+                </script>
+                <input id="cb" type="checkbox">
+                <span class="slider round"></span>
+            </label>
+            <style>
+                @media (min-width: 	750px){
+                    .switch{position:relative;display:inline-block!important;width:60px;height:34px;}
+                    .switch input{display:none;}
+                    .slider{position:absolute;cursor:pointer;top:0;left:0;right:0;bottom:0;background-color:#ccc;-webkit-transition:.4s;transition:.4s;}
+                    .slider:before{position:absolute;content:"";height:26px;width:26px;left:4px;bottom:4px;background-color:white;-webkit-transition:.4s;transition:.4s;}
+                    input:checked + .slider{background-color:#1abc9c;}
+                    input:focus + .slider{box-shadow:0 0 1px #1abc9c;}
+                    input:checked + .slider:before{-webkit-transform:translateX(26px);-ms-transform:translateX(26px);transform:translateX(26px);}.slider.round{border-radius:34px;}
+                    .slider.round:before{border-radius:50%;}
+                }
+            </style>
+            <!-- 左侧固定开关，记得及时删除这段代码 End-->
+
+            <!-- 个人肖像 -->
+            <section class="me">
+                <!-- <section class="portrait">
+                    <div class="loading">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    
+                    <img class="avatar" src="assets/images/avatar.jpg" onload="loading()">
+                </section> -->
+
+                <h1 class="name"><big><strong>Wendy Fan</strong></big></h1>
+                <p>
+                    <a href="mailto: fanwenxiaoyu@gmail.com" title="fanwenxiaoyu@gmail.com"><label><i class="fa fa-envelope"></i></label></a>
+                    
+
+                    <a href="https://www.linkedin.com/in/wenyu-fan/" title="https://www.linkedin.com/in/wenyu-fano/" target="_blank"><label><i class="fa fa-linkedin-square" aria-hidden="true"></i></label></a>
+
+                  
+                    <a href="https://github.com/fanwenxiaoyu" title="https://github.com/fanwenxiaoyu" target="_blank"><label><i class="fa fa-github" ></i></label></a>
+                </p>
+                <h4 class="info-job">Data Scientist/Bioinformatics Scientist</h4>
+
+            </section>
+
+            <!-- 基本信息 -->
+            <!-- <section class="profile info-unit">
+                <h2>
+                    <i class="fa fa-user" aria-hidden="true"></i>基本信息</h2>
+                <hr/>
+                <ul>
+                    <li>
+                        <label>个人信息</label>
+                        <span>张大侠 / 男 / 24岁</span>
+                    </li>
+                    <li>
+                        <label>英语水平</label>
+                        <span>CET-6</span>
+                    </li>
+                    <li>
+                        <label>计算机水平</label>
+                        <span>软考中级</span>
+                    </li>
+                </ul>
+            </section> -->
+
+            <!-- 联系方式 -->
+            <!-- <section class="contact info-unit">
+                <h2>
+                    <i class="fa fa-phone" aria-hidden="true"></i>Contact Info</h2>
+                <hr/>
+                <ul >
+                    <a href="mailto: zhaozx0308@gmail.com" title="zhaozx0308@gmail.com"><label><i class="fa fa-envelope"></i></label></a>
+                    
+
+                    <a href="https://www.linkedin.com/in/zengxiang-zhao/" title="https://www.linkedin.com/in/zengxiang-zhao/" target="_blank"><label><i class="fa fa-linkedin-square" aria-hidden="true"></i></label></a>
+
+                  
+                    <a href="https://github.com/Zengxiang-Zhao" title="https://github.com/Zengxiang-Zhao" target="_blank"><label><i class="fa fa-github" ></i></label></a>
+                  
+
+                  <li><a href="{{ site.facebook }}" title="{{ site.facebook }}" target="_blank"><span class="ace-icon ace-icon-facebook"></span></a></li>
+                  <li><a title="{{ site.phone }}"><span class="ace-icon ace-icon-phone"></span></a></li>
+                  <li><a href="mailto: {{ site.email }}" title="{{ site.email }}"><span class="ace-icon ace-icon-contact"></span></a></li>
+                </ul>
+            </section>
+ -->
+            <!-- 技能点 -->
+            <section class="skill info-unit">
+                <h2>
+                    SKILLS</h2>
+                <hr/>
+                <ul>
+                    <li>
+                        <label>Python</label>
+                        <progress value="80" max="100"></progress>3 yrs
+                    </li>
+                    <li>
+                        <label>ML</label>
+                        <progress value="70" max="100"></progress>2 yr
+                    </li>
+                    <li>
+                        <label>R</label>
+                        <progress value="70" max="100"></progress> 2 yr
+                    </li>
+                    <li>
+                        <label>Data Analysis</label>
+                        <progress value="100" max="100"></progress> 6 yrs
+                    </li>
+                    <li>
+                        <label>NGS Data</label>
+                        <progress value="80" max="100"></progress> 3 yrs
+                    </li>
+                    <li>
+                        <label>TensorFlow</label>
+                        <progress value="60" max="100"></progress> 1 yr
+                    </li>
+                     <li>
+                        <label>Linux</label>
+                        <progress value="80" max="100"></progress> 3 yrs
+                    </li>
+                    <li>
+                        <label>Git</label>
+                        <progress value="60" max="100"></progress> 1 yrs
+                    </li>
+                    
+                    <li>
+                        <label>MySQL</label>
+                        <progress value="60" max="100"></progress> 1 yrs
+                    </li>
+                    
+                </ul>
+            </section>
+
+          <!--   <section class="qrcode info-unit">
+                <h2><i class="fa fa-qrcode" aria-hidden="true"></i>二维码</h2>
+                <hr/>
+                <img src="https://github.com/if2er/FeZaoDuKe-Collection/blob/master/ifeees.jpg?raw=true" style="width: 100%;" alt="">
+            </section> -->
+
+            <!-- 技术栈 -->
+            <!-- <div class="stack info-unit">
+                    <h2><i class="fa fa-code" aria-hidden="true"></i>其他</h2>
+                    <hr/>
+                    <ul>
+                        <li>
+                            <label>前端</label>
+                            <span>React、jQuery、微信小程序、Bootstrap、SASS、LESS</span>
+                        </li>
+                        <li>
+                            <label>后端</label>
+                            <span>Node.js、MySQL、MongoDB、WordPress、ThinkPHP</span>
+                        </li>
+                        <li>
+                            <label>其他</label>
+                            <span>Git、SVN、Markdown</span>
+                        </li>
+                    </ul>
+                </div> -->
+        </section>
+
+        <section class="main">
+
+            <section class="profile info-unit" id="about-me">
+                <h2>
+                    <i class="fa fa-user" aria-hidden="true"></i>CAREER SUMMARY</h2>
+                <hr />
+                <ul>
+                    <p>
+                        A Bioinformatics Scientist & Data Scientist, skilled in Python and R, also familiar with SQL, MATLAB and JavaScript. I’ve got lots of experience from data cleaning to model building and prediction. Together with my biology background, I also have years of study in the next generation sequencing and single cell sequencing data analysis. I consider myself highly organized, always plan and follow my checklist to handle multitasks. 
+                    </p>
+
+                </ul>
+            </section>
+
+            <!-- 教育经历 -->
+            <section class="edu info-unit" id="education">
+                <h2>
+                    <i class="fa fa-graduation-cap" aria-hidden="true"></i>EDUCATION</h2>
+                <hr/>
+                
+                <ul>
+                    <li >
+                        <h3> 
+                            <span><strong>M.S in Data Science</strong></span>
+                            <time>Aug. 2018 - Dec. 2019</time>
+                            
+                        </h3>
+                        <p>City College of New York, New York</p>
+                        <ul class="info-content">
+                            <li>Major Areas:ETL, Data cleaning, Database buildup, SQL, Data analysis, Machine learning and model building，Data visualization.</li>
+                            <li>Relevant Coursework:Applied Machine Learning, Big Data, Applied Statistics, Database System, Data Engineering, Computer Vision，Bioinformatics.</li>
+                        </ul>
+                        
+                    </li>
+                    <li>
+                        <h3>
+                            <span><strong>M.S in Biology Engineering</strong> </span>
+                            <time>Sep. 2013 - Dec. 2016</time>
+                        </h3>
+                        <p>University of Chinese Academy of Sciences, Beijing</p>
+                        <ul class="info-content" >
+                            <li>Research Topic: High-throughput sequencing of soil microorganisms and their relationship with extreme climate change.</li>
+                            <li>Publication: <br>
+                                <i>[1]Li L, Fan W, Kang X, et al. Responses of greenhouse gas fluxes to climate extremes in a semiarid grassland[J]. Atmospheric environment, 2016, 142: 32-42.<br>
+                                [2]Gao W, Reed S C, Munson S M, et al. Responses of soil extracellular enzyme activities and bacterial community composition to seasonal stages of drought in a semiarid grassland[J]. Geoderma, 2021, 401: 115327.
+                            </i> </li>
+
+                        </ul>
+                    </li>
+
+                    <li>
+                        <h3>
+                            <span><strong>B.S in Bioengineering</strong> </span>
+                            <time>Sep 2019 - Jun 2013</time>
+                        </h3>
+                        <p>Agriculture University of Hebei, Hebei, China</p>
+                        <ul class="info-content" >
+                            <li>Major Areas: Genetics, Molecular Biology, Cell Biology, Microbiology, Cytology, Biochemistry, Fermentation</li>
+                            
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- 工作经历 -->
+            <section class="work info-unit" id="work-experience">
+                <h2>
+                    <i class="fa fa-shopping-bag" aria-hidden="true"></i>WORK EXPERIENCE</h2>
+                <hr/>
+                <ul>
+                    <li>
+                        <h3>
+                            <span><strong>Bioinformatics Scientist</strong> </span>
+                            <time>Jun. 2020 - Jul. 2021</time>
+                        </h3>
+
+                        <p>Analytical Biosciences <sub>(focused on single-cell RNA-seq)</sub></p>
+                        <ul class="info-content">
+                            <li>Use Python to do quality control of single-cell RNA-seq data and functions. Ensure data reliability and function stability. I’ve helped build up the world’s largest single-cell RNA-seq database.</li>
+                            <li>Demonstrate our product (OmniBrowser and OmniAnalyzer) to clients, and collect their feedback. I’ve hold several seminars with clients from drug manufacturers to scientific institutes. </li>
+                            <li>Design new & upgrade product functions such as auto annotation, biomarker discovery, and user visualization interface. Analyze dozens of competitor’s product. I’ve helped our product to iterate twice and go to market.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>
+                            <span><strong>Auditor&Customer Service</strong> </span>
+                            <time>Dec. 2017 - Aug. 2019</time>
+                        </h3>
+                        <p>New York Service Center for Chinese Study fellows. Inc <sub></sub></p>
+                        <ul class="info-content">
+                            <li>Review, process applications, and help the applicants. </li>
+                            <li>Coordinate with higher authority to implement policy. Detect inaccuracy and confirm the correct information. I’ve helped thousands of clients to achieve their goals.</li>
+                           
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>
+                            <span><strong>Bioinformatics Engineer</strong> </span>
+                            <time>Feb. 2017 - Aug. 2017</time>
+                        </h3>
+                        <p>Somur Beijing technology co. LTD <sub>(Health Care Providers and Services)</sub></p>
+                        <ul class="info-content">
+                            <li>Project R & D and technical support.  </li>
+                            <li>Collect and Clean next-generation sequencing data. Build up an analysis pipeline from scratch.</li>
+                            <li>Build models base on published papers and our data to predict indexes for the clients’ health report. I’ve analyzed thousands of infants’ and adults’ RNA-seq data and Generated personal reports for clients.</li>
+                            <li>Publication:<i>Liang B, Fan W, Han J G, et al. An implementation of infants' gut microbiome maturation analyses by 16s rRNA from stool samples in extraction solution of room temperature[C]//2017 IEEE International Conference on Bioinformatics and Biomedicine (BIBM). IEEE, 2017: 910-914.
+                            </i> </li>
+                            
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- 项目经验 -->
+            <section class="project info-unit" id="projects">
+                <h2>
+                    <i class="fa fa-tasks" aria-hidden="true"></i>PROJECTS</h2>
+                <hr/>
+                <ul>
+                    <li>
+                        <h3>
+                            <span><strong>Machine Learning for Childhood Obesity</strong> </span>
+                            
+                            <time>Fall 2019</time>
+                        </h3>
+                        <p>Utilize machine learning to discover the potential influencing drivers for childhood obesity from a questionnaire dataset.
+                        </p>
+
+                        <ul class="info-content">
+                            
+                            <li>ETL, data exploration, clean data and deal with missing values with multiple imputation. Deal with unbalanced data.</li>
+                            <li>Use Classification estimators to build models then find the most influencing features.</li>
+                            <li>Use Clustering & Regression to target the possible cause of childhood obesity.</li>
+                        </ul>
+                        <p> <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>[Skills Developed]: Python, MICE, Sklearn, Seaborn, Matplotlab.
+                        </p>
+                    </li>
+                    
+
+                    <li>
+                        <h3>
+                            <span><strong>Big Data: Geo-Distribution of Drug Abuse Related Tweets</strong> </span>
+                            
+                            <time>Spring 2019</time>
+                        </h3>
+                        <p>Compute the density of drug abuse related tweets within 100 million geo-tagged tweets in urban level within minutes.
+                        </p>
+
+                        <ul class="info-content">
+                            
+                            <li>Spatially filter targeted tweets within census tracts.</li>
+                            <li>Sum the tweets based on geographical boundaries and normalize the results by their population.</li>
+                        </ul>
+                        <p> <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>[Skills Developed]: Spark, Python.
+                        </p>
+                    </li>
+
+                    <li>
+                        <h3>
+                            <span><strong>Build Up a School Website</strong> </span>
+                            
+                            <time>Spring 2019</time>
+                        </h3>
+                        <p>A website was built including a server and a client interface for students, faculty and admin. This was a group project and I was responsible for the faculty page where faculty can login their accounts and manage their courses. This project was executed with React.</p>
+
+                        <ul class="info-content">
+                            
+                            <li>Build up a faculty page.</li>
+                            <li>Implement functions for the faculty to add students to a course, add assignments, and give grades.</li>
+                        </ul>
+                        <p> <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>[Skills Developed]: SQL, HTML, JavaScript, React, CSS.
+                        </p>
+                    </li>
+
+                    <li>
+                        <h3>
+                            <span><strong>R: Sea Surface Temperature Modeling</strong> </span>
+                            
+                            <time>Fall 2018</time>
+                        </h3>
+                        <p>Build a suitable model with R to estimate sea surface temperature with data collected from satellites radiometer instruments. Backward selection was used to simplify the original model, and attributes reduced from 10 to 2 without significant loss of performance.</p>
+
+                        <ul class="info-content">
+                            
+                            <li>ETL, variable preparation and split.</li>
+                            <li>Backward selection.</li>
+                            <li>Find an acceptable simplified model.</li>
+                        </ul>
+                        <p> <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>[Skills Developed]: R, DAAG, leaps, testthat.
+                        </p>
+                    </li>
+
+                    <li>
+                        <h3>
+                            <span><strong>Computer Vision: Door Detection</strong> </span>
+                            
+                            <time>Fall 2019</time>
+                        </h3>
+                        <p>Identify the door in a photo with computer vision.
+                        </p>
+
+                        <ul class="info-content">
+                            
+                            <li>Edge detection.</li>
+                            <li>Hough transfer to remain and connect lines.</li>
+                            <li>Filter properties to find the door.</li>
+                        </ul>
+                        <p> <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>[Skills Developed]: MATLAB.
+                        </p>
+                    </li>
+
+                    <li>
+                        <h3>
+                            <span><strong>Microbiome Shift Analysis under Extreme Climate Change </strong> </span>
+                            
+                            <time>Jun. 2014 - Jan. 2017</time>
+                        </h3>
+                        <p>16s rRNA sequencing and studding the microbiome variation under extreme drought, heatwave or precipitation frequency change.
+                        </p>
+
+                        <ul class="info-content">
+                            
+                            <li>DNA extraction and next generation sequencing.</li>
+                            <li>Data processing to generate OTU table.</li>
+                            <li>Analysis the microbiome variation under different treatment.</li>
+                        </ul>
+                        <p> <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>[Skills Developed]: Linux, Qiime.
+                        </p>
+                    </li>
+
+                    <li>
+                        <h3>
+                            <span><strong>Gug Microbiome Analysis Pipeline Buildup & Explore its Relationship with Human Health</strong> </span>
+                            
+                            <time>Feb. 2017 - Aug. 2017</time>
+                        </h3>
+                        <p>Set up the production pipeline of next generation sequencing data processing. Explore the relationship of human gut microbiome and infants' gut microbiome maturation, chronic disease, obesity, and mental health.
+                        </p>
+
+                        <ul class="info-content">
+                            
+                            <li>Build up a pipeline for 16s rRNA sequencing data.</li>
+                            <li>Predict human health indexes based on published results.</li>
+                            <li>Analysis the microbiome variation under different treatment.</li>
+                        </ul>
+                        <p> <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>[Skills Developed]: Linux, Qiime, Perl.
+                        </p>
+                    </li>
+
+
+                </ul>
+            </section>
+
+            <!-- 作品展示 -->
+            <section class="work info-unit" id="showcase">
+                <h2>
+                    <i class="fa fa-picture-o" aria-hidden="true"></i> SHOWCASE</h2>
+                <hr/>
+                <ul class="info-content">
+
+                    <li>A screenshot from my Tensorflow gesture detection model test result, I used transfer learning with model SSD MobileNet v2 320x320 which was trained on the COCO 2017 dataset. 
+                          
+
+                        
+                        <figure class="portfolio-figure">
+                        <img class="avatar" src="assets/images/ResultImageSample.png" width="100%"  alt="web page">
+                        
+                    </figure>
+                    </li>
+                    <li>Video test sample of the gesture detection model. Four gestures including ThumbsUp, ThumbsDown, ThankYou, and LongLive, was trained, each class incude less than 10 training images labeled by myself. 
+                        The overall result is good, and model can be improved with more images.
+                        <video width="704" height="528" controls>
+                            <source src="assets/images/ResultVideoSample.mp4" type="video/mp4">
+                            
+                            </object> 
+                          </video>
+                        </li>
+
+                    <li>Model selection visualization from my Machine Learning for Childhood Obesity project. On the left is the test result for overweight and obesity groups. On the right is for obesity group only.
+                        Each model is shown with different color.
+                        There shows 5 scores for each model, accu for accuracy, precision, recall, specificity, and f1 for F1 score. 
+                        
+
+                        
+                        <figure class="portfolio-figure">
+                        <img class="avatar" src="assets/images/MLObesity.png" width="100%"  alt="web page">
+                        
+                    </figure>
+                    </li>
+                    
+                    
+                    <li>Dynamic change graph made with tableau, showing the story of time about me and my husband. It's a small gift to my husband for the Chinese Valentine’s Day.
+                      <video width="704" height="528" controls>
+                        <source src="assets/images/sample.mp4" type="video/mp4">
+                  
+                        </object> 
+                      </video>
+                    </li> 
+                    
+                    
+                </ul>
+                
+            </section>
+        </section>
+    </article>
+
+
+
+    <footer class="footer">
+        <p>Thanks for reading my resume and hope to work with you!</p>
+    </footer>
+
+
+    <!-- 侧栏 -->
+    <aside>
+        <ul>
+            <li>
+                <a href="#about-me" >About me</a>
+            </li>
+            <li>
+                <a href="#education">Education</a>
+            </li>
+            <li>
+                <a href="#work-experience">Work exp</a>
+            </li>
+            <li>
+                <a href="#projects" >Projects</a>
+            </li>
+            <li>
+                <a href="#showcase" >Showcase</a>
+            </li>
+        </ul>
+    </aside>
+
+    <script src="./assets/js/index.js"></script>
+</body>
+
+</html>
